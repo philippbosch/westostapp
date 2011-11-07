@@ -22,5 +22,21 @@
                 <p>An app by <a href="http://pb.io/">Philipp Bosch</a>. Follow <a href="http://twitter.com/philippbosch">@philippbosch</a> on twitter.</p>
             </footer>
         </div>
+        {% unless debug %}
+        <!-- Piwik --> 
+        <script>
+            var pkBaseURL = "//analytics.pb.io/";
+            document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+        <script>
+            try {
+                var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 8);
+                piwikTracker.trackPageView();
+                piwikTracker.enableLinkTracking();
+            } catch( err ) {}
+        </script>
+        <noscript><p><img src="//analytics.pb.io/piwik.php?idsite=8" style="border:0" alt="" /></p></noscript>
+        <!-- End Piwik Tracking Code -->
+        {% endunless %}
     </body>
 </html>
