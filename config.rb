@@ -7,6 +7,7 @@ css_dir = "stylesheets"
 sass_dir = "sass"
 images_dir = "images"
 javascripts_dir = "javascripts"
+relative_assets = true
 
 # output_style = :expanded or :nested or :compact or :compressed
 output_style = :compressed
