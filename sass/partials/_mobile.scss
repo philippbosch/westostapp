@@ -4,12 +4,6 @@
  * Inherits styles from: Default Layout.  */
 
 @media only screen and (max-width: 767px) {
-    @if $debug {
-        body:before {
-            content: "mobile";
-        }
-    }
-    
     #{$less-grid-element} {
         @include grid(3);
     }

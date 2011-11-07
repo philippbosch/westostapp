@@ -7,7 +7,7 @@
 // by William Wells <less@hapa.me>
 // https://github.com/willhw/compass-less-plugin
 
-$debug: true;
+$debug: false;
 $less-grid-padding: false;
 
 @import "compass";
@@ -17,10 +17,6 @@ $less-grid-padding: false;
 @import "less/typography/16px";
 
 @import "partials/global";
-
-@import "partials/elements/add2home";
-// @import "partials/elements/…";
-
 @import "partials/default";
 @import "partials/tablet";
 @import "partials/mobile";

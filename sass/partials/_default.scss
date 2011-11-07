@@ -5,11 +5,31 @@
 
 #{$less-grid-element} {
     @include grid(10);
-    margin: 24px auto;
+    margin: 72px auto;
 }
 
-@if $debug {
-    body:before {
-        content: "default";
-    }
+#main {
+    padding-top: 500px;
+    background: image-url("map.png") 50% 0 no-repeat;
+}
+
+h1 {
+    margin-bottom: 0.5em;
+}
+
+p {
+    color: #888;
+    margin: 2em 0;
+}
+
+.app {
+    color: #FFF;
+}
+
+footer {
+    font-size: 12px;
+}
+
+a {
+    color: #FFF;
 }
